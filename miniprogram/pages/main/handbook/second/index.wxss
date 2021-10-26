@@ -1,0 +1,117 @@
+/* 整体框架样式: flex模式,左侧菜单,右侧产品 */
+.container{
+  position: fixed;
+  width: 100%;
+  height: 100%;  
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+}
+/* 左侧-分类 */
+.aside{
+  width: 5rem;
+  height: 100%;
+  background:#525F72;
+  border-right: 1px solid #ddd;
+  font-size: .85rem;
+  display: flex;
+  flex-direction: column;
+}
+.asideItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  border-bottom: 1px solid #ddd;/*每个分类下面的灰色横线*/
+}
+.asideItem.selected{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  border-bottom: 1px solid #ddd;/*每个分类下面的灰色横线*/
+  background: #01826E;
+}
+.asideItem.selected text{
+  font-size: 40rpx;
+  font-weight: 400;
+}
+.asideImage{
+  margin: 5rpx;
+  width: 25rpx;
+  height: 25rpx;
+}
+
+/*分类通用样式(可以通过判断添加{{}}让他变成.selected)*/
+.type-nav{
+  width: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+/* 选中某个分类的样式 */
+
+
+/*右侧-1行1列图片*/
+.content{
+  margin-top: 20px;
+  flex:1;/*定义产品列表沾占满所有空间，这里背景都是白色*/
+}
+/* 右侧产品的总样式 */
+.cps{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;/*自动换行*/
+  flex-direction: column;
+  align-items: center;
+}
+.cp-item{
+  margin-top: 40rpx;
+  margin-bottom: 30rpx;
+  width:80%;
+  display:flex;
+  box-sizing: border-box;
+  border-radius: 15rpx;
+  flex-direction: column;
+  background: #fff;
+}
+/* 定义产品图片，名称，价格从上到下排列 */
+.cp-item navigator{
+  display: flex;
+  flex-direction: column;
+}
+.cp-top{
+  height:190rpx;
+}
+.cp-image{
+  width:100%;
+  height: 100%;
+  opacity: 0.9;
+}
+.cp-text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 11px;
+
+}
+.cp-name{
+  width:100%;
+  height:43px;
+  background:#859DB1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center
+  ;
+}

@@ -1,0 +1,29 @@
+<view class="mContainer">
+  <swiper class="imageSwiper" indicator-dots >
+  <swiper-item >
+  <video src="{{speciesDetail.video}}" class="detailImage"></video>
+  </swiper-item>
+  <swiper-item wx:for="{{speciesDetail.image}}">
+  <image src="{{item}}" class="detailImage" mode="aspectFit" bindtap="clickImg" data-url="{{item}}"></image>
+  </swiper-item>
+  </swiper>
+
+<view class="latinText">
+<text >{{speciesDetail.latin_name}}</text>
+</view>
+<view class="textView">
+<!-- 左侧 中文名 分层阶级 -->
+<view class="leftText">
+  <view class="iconText">中文名</view>
+  <view class="iconText">分类层级</view>
+  <view class="iconText">描述</view>
+</view>
+<!-- 右侧侧具体部分 -->
+<view class="rightText">
+  <view class="exText">{{speciesDetail.name}}</view>
+  <view class="detailText">{{speciesDetail.class}}</view>
+</view>
+</view>
+<!-- 描述 -->
+<text class="detailText">{{speciesDetail.detail}}</text>
+</view>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search-input":"/components/search-input/index",
+    "card-item":"/components/card-item/index"
+  },
+  "enablePullDownRefresh":false
+
+}

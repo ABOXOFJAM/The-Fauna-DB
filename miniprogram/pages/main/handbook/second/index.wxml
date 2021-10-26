@@ -1,0 +1,32 @@
+<!--pages/main/handbook/second/index.wxml-->
+<view class="container">
+  <!-- 左侧分类 -->
+  <view class="aside" style="height:{{winHeight}}px">
+    <block wx:for="{{navList}}" >
+      <view class="asideItem {{curNav==item._id?'selected':''}}"  data-index="{{index}}" data-item="{{item}}" bindtap="selectClass">
+        <text class="type-nav" >{{item.name}}</text>
+        <image src="../../../../static/icon_x.png" class="asideImage"></image>
+      </view>
+    </block>
+  </view>
+  <!-- 右侧卡片 -->
+  <scroll-view class="content" scroll-y style="height:{{winHeight}}px">
+    <text style="font-size:20px;color:#104E8B;margin-left:40px;font-weight:700">搜索结果</text>
+    <view class="cps">
+      <block wx:for="{{selectList}}" wx:key="id">
+        <view class="cp-item" bindtap="selectItem" data-item="{{item}}" >
+          <navigator url='/pages/main/handbook/first/index' open-type="redirect">
+            <!-- 卡片的上半部分 横向布局-->
+            <view class="cp-top">
+              <image mode="aspectFill" src='{{item.image}}' class="cp-image"></image>
+            </view>
+            <!-- 卡片的下半部分 -->
+            <view class="cp-name">
+              <text style="color:#fff;">{{item.name}}</text>
+            </view>
+          </navigator>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>

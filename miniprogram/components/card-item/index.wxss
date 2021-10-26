@@ -1,0 +1,64 @@
+/* UI/menu-card/index.wxss */
+.cardContainer{
+  box-shadow: 0px 0px 2px 1px gray;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 90%;
+  height: 400rpx;
+  background: white;
+  border-radius: 5px;
+  
+}
+.cardContainer-big{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardBtn{
+  background: #3694C3;
+}
+.detailContainer{
+  width: 100%;
+  height: 150rpx;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.stuffContainer{
+  display: flex;
+  flex-direction: row;
+ 
+}
+.cardIcon{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.icon{
+  width: 220rpx;
+  height: 220rpx;
+  margin-top: 40rpx;
+}
+.cardText{
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardname{
+  font-size: 64rpx;
+}
+.cardnum{
+  font-size: 100rpx;
+}
+.details{
+  width: 100%;
+  height: 100rpx;
+  background: #888888;
+}

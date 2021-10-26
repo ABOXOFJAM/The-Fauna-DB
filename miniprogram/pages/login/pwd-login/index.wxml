@@ -1,0 +1,12 @@
+<!--pages/login/pwd-login/index.wxml-->
+<view class="mContainer">
+  <image src="/static/background-white.png" mode="scaleToFill" class="background">
+  </image>
+  <view class="loginContainer">
+    <image class="boxImg" mode="scaleToFill"> </image>
+      <view class="boxCenter">
+        <text class="helloTxt">欢迎登入</text>
+      </view>
+  
+  </view>
+</view>

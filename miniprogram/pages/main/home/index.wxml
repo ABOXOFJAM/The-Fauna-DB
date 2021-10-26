@@ -1,0 +1,31 @@
+<!--pages/main/home/index.wxml-->
+<swiper vertical="true" class="homeContainer">
+  <image class="background"></image>
+  <!-- 主页一 -->
+  <swiper-item>
+    <!-- 上半部分菜单容器 -->
+    <view class="homeMenu">
+    <!-- 轮播图 -->
+      <swiper indicator-dots="true" autoplay="true" class="swiper">
+        <swiper-item wx:for="{{swiper_list}}">
+          <image src="{{item.image}}" mode="scaleToFit"></image>
+        </swiper-item>
+      </swiper>
+    
+   <!-- 正在开发 -->
+     <!-- 第一排可用功能 -->
+       <!-- 功能列表 -->
+    <view class="homeIcon_big">
+     <view class="homeIcon">
+      <navigator class="Icon" wx:for="{{navIcon1}}" bindtap="iconMethod({{item.text}})">
+        <image class='navImg' src ='{{item.img}}' style='background :{{item.bgc}}'></image>
+        <text >{{item.text}} </text>
+      </navigator>
+      </view>
+    </view>
+  </view>
+  </swiper-item>
+  <!-- 主页二 -->
+  <swiper-item>
+  </swiper-item>
+</swiper>

@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/main/handbook/first/index",
+    "pages/main/home/index",
+    
+    "pages/main/handbook/second/index",
+    "pages/main/handbook/third/index",
+    
+    "pages/login/pwd-login/index",
+    "pages/main/mine/index",
+   
+    "pages/login/select/index"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#003C78",
+    "navigationBarTitleText": "华东生物",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/main/home/index",
+        "iconPath": "/static/home.png",
+        "selectedIconPath": "/static/home-selected.png"
+      },
+      {
+        "pagePath": "pages/main/handbook/first/index",
+        "iconPath": "/static/datebase.png",
+        "selectedIconPath": "/static/datebase-selected.png"
+      },
+      {
+        "pagePath": "pages/main/mine/index",
+        "iconPath": "/static/mine.png",
+        "selectedIconPath": "/static/mine-selected.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

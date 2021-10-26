@@ -1,0 +1,17 @@
+<!--UI/menu-card/index.wxml-->
+<view class="cardContainer-big">
+<view class="cardContainer">
+  <view class="stuffContainer">
+    <view class="cardText">
+      <text class="cardname">{{name}}</text>
+      <text class="cardnum">{{num}}</text>
+    </view>
+    <view class="cardIcon">
+      <image src="{{card_url}}" class="icon"></image>
+    </view>
+  </view>
+  <view class="detailContainer">
+  <button class="cardBtn"></button>
+  </view>
+</view>
+</view>

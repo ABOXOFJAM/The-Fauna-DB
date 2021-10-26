@@ -1,0 +1,35 @@
+<!--pages/main/mine/index.wxml-->
+<view class="mContainer">
+<!-- 上半头像部分 -->
+  <view class="headContainer">
+    <view class="user-avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+  <!-- 中间名称部分 -->
+  <view class="nameContainer">
+  <view class="nameDetail">
+  <!-- 上方文字 -->
+  <open-data type="userNickName" class="nameText"></open-data>
+  <!-- 称号 -->
+  <view class="achievement" wx:for="{{achievement_list}}" style="background:{{item.color}}">
+    <text >{{item.name}}</text>
+  </view>
+  
+  <!-- 分割线 -->
+  <view class='divLine'></view>
+  <!-- 个性签名 -->
+  <view></view>
+  <view>
+  </view>
+  </view>
+  </view>
+  <!-- 下半功能部分 -->
+  <view class="funcContainer">
+  <navigator wx:for="{{func_list}}" class="func_item">
+  <image src="{{item.icon}}" ></image>
+  <text>{{item.text}}</text>
+  <image src="../../../static/icon_right.png"></image>
+  </navigator>
+  </view>
+</view>

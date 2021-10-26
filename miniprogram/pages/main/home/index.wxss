@@ -1,0 +1,74 @@
+/* pages/main/home/index.wxss */
+.homeContainer{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.background{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #f8f8f9;
+  z-index: -1;
+}
+.swiper{
+  width: 100%;
+  height: 460rpx;
+}
+.swiper swiper-item{
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.swiper image{
+  width: 100%;
+  height: 100% ;
+}
+/* 上方菜单栏 */
+.homeMenu{
+  width: 100%;
+  height: 900rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeIcon_big{
+  box-sizing: border-box;
+  padding: 10rpx;
+  width: 95%;
+  margin-top: 45rpx;
+  border-radius: 25rpx;
+  background: #525F72 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.homeIcon{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.homeIcon text{
+  margin-top: 10rpx;
+  font-size: 25rpx;
+  color: #fff;
+}
+.Icon{
+  flex: 1;
+  width: 20%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navImg{
+  box-sizing: border-box;
+  padding: 25rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}

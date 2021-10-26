@@ -1,0 +1,90 @@
+/* pages/main/datebase/index.wxss */
+.bgImg {
+  width: 100%;
+  height: 100%;
+  background: #f8f8f9;
+  position: fixed;
+  z-index: -1;
+}
+.staff{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.mContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.swiper {
+  opacity: 0.80;
+  width: 100%;
+  height: 460rpx;
+}
+
+.swiper swiper-item {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.swiper image {
+  width: 100%;
+}
+
+/* 物种记录数量卡 */
+.numCard {
+  box-shadow: 0px 0px 10px 5px gray;
+  /* ：box-shadow: h-shadow v-shadow blur spread color inset; */
+  /* h-shadow：必需。水平阴影的位置。允许负值。
+     v-shadow：必需。垂直阴影的位置。允许负值。
+     blur：可选。模糊距离。
+     spread：可选。阴影的尺寸。
+     color：可选。阴影的颜色。 */
+  opacity: 0.60;
+  top: 30px;
+  position: absolute;
+  width: 550rpx;
+  height: 250rpx;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 数量卡文字部分 */
+.numText {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  color: #8A8A8A;
+  font-size: 18px;
+}
+
+.num {
+  color: #01826E;
+  margin: 10px;
+  font-size: 36px;
+}
+
+.search {
+  margin-top: 50rpx;
+  box-shadow: 0px 0px 1px 1px gray;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
+.cardView {
+  margin-top: 80rpx;
+  width: 100%;
+  overflow: hidden;
+}

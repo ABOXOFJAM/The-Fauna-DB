@@ -1,0 +1,38 @@
+<!--pages/main/datebase/index.wxml-->
+<view class="mContainer">
+  <!-- 留一个地方如果替换背景图片 -->
+  <image class="bgImg"></image>
+  <scroll-view class="mScroll" scroll-y >
+  <view class="staff">
+  <!-- 轮播图 -->
+  <swiper autoplay="true" class="swiper">
+    <swiper-item wx:for="{{swiper_list}}">
+      <image src="{{item.image}}" mode="scaleToFill"></image>
+    </swiper-item>
+  
+  </swiper>
+  <!-- 物种数量展示 -->
+  <view class="numCard">
+    <view class="numText">
+      <text class="name">物种记录</text>
+      <text class="num">{{speciesNum}}</text>
+    </view>
+    <view class="numText">
+      <text class="name">影像记录</text>
+      <text class="num">{{photosNum}}</text>
+    </view>
+  </view>
+  <!-- 自定义搜索框 -->
+  <search-input class="search" bindtap="toSearch"></search-input>
+  <!-- 大类引导部分 -->
+  <view class="title">
+  </view>
+  <view class="cardView" scroll-y >
+    <block wx:for="{{cardList}}" class="cardBlock">
+      <card-item card_url= "{{item.image}}"name="{{item.name}}" num="{{item.num}}" bindtap="toDetail" data-name="{{item.name}}">
+      </card-item>
+    </block>
+  </view>
+</view>
+</scroll-view>
+</view>

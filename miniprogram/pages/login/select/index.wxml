@@ -1,0 +1,14 @@
+<!--pages/login/select/select.wxml-->
+<view class="mContainer">
+  <image src="/static/background-white.png" mode="scaleToFill" class="background">
+  </image>
+  <view class="loginContainer">
+    <image class="boxImg" mode="scaleToFill"> </image>
+      <view class="boxCenter">
+        <text class="helloTxt">欢迎登入</text>
+        <button class="wxBtn" bindtap="toLogin">微信授权登入</button>
+        <button class="mailBtn" bindtap="toMailLogin">邮箱密码登入</button>
+      </view>
+  
+  </view>
+</view>

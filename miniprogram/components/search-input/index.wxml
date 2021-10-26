@@ -1,0 +1,8 @@
+<!--UI/search-edittext/index.wxml-->
+<View class="searchContainer">
+  <input class="searchEdt" auto-focus placeholder="搜索物种"/>
+  <view class="searchBox" bindtap="">
+    <image class="searchIcon" src="/static/search-icon.png">
+    </image>
+  </view>
+</View>
