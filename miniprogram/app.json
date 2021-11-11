@@ -1,22 +1,19 @@
 {
   "pages": [
-    "pages/main/handbook/first/index",
     "pages/main/home/index",
-    
+    "pages/main/homeFunc/funcBar/index",
+    "pages/main/handbook/first/index",
     "pages/main/handbook/second/index",
     "pages/main/handbook/third/index",
-    
     "pages/login/pwd-login/index",
     "pages/main/mine/index",
-   
-    "pages/login/select/index"
-    
-    
+    "pages/login/select/index",
+    "pages/main/homeFunc/funcDetail/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#003C78",
-    "navigationBarTitleText": "华东生物",
+    "navigationBarTitleText": "华东生物数据库",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {

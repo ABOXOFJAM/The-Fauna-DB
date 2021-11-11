@@ -1,0 +1,25 @@
+/* miniprogram/pages/main/home_func/policy/index.wxss */
+.mCard{
+  display: flex;  
+  flex-direction: row;
+  padding: 30rpx;
+  box-shadow: gray;
+  border: 3rpx solid lightgrey;
+}
+.mCard image{
+  height: 200rpx;
+  width: 200rpx;
+  margin-right: 60rpx;
+}
+.cardText{
+  display: flex;
+  flex-direction: column;
+}
+.cardHead{
+  font-size: larger;
+  color: #000;
+}
+.cardDetail{
+  font-size: medium;
+  color: #999999;
+}

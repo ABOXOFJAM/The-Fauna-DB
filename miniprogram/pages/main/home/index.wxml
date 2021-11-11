@@ -11,19 +11,21 @@
           <image src="{{item.image}}" mode="scaleToFit"></image>
         </swiper-item>
       </swiper>
-    
-   <!-- 正在开发 -->
-     <!-- 第一排可用功能 -->
+       
        <!-- 功能列表 -->
     <view class="homeIcon_big">
      <view class="homeIcon">
-      <navigator class="Icon" wx:for="{{navIcon1}}" bindtap="iconMethod({{item.text}})">
+      <navigator class="Icon" wx:for="{{navIcon1}}" bindtap="iconMethods" data-key="{{item.text}}">
         <image class='navImg' src ='{{item.img}}' style='background :{{item.bgc}}'></image>
         <text >{{item.text}} </text>
       </navigator>
       </view>
     </view>
   </view>
+  <!-- 介绍文字 -->
+  <view class="DBdetail">
+       <text decode="{{true}}">{{DBtext}}</text>
+       </view>
   </swiper-item>
   <!-- 主页二 -->
   <swiper-item>

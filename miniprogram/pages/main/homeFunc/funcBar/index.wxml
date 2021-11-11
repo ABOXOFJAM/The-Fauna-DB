@@ -1,0 +1,12 @@
+<!--miniprogram/pages/main/home_func/policy/index.wxml-->
+<view class="mContainer">
+<!-- 政策卡片 -->
+<view class="mCard" wx:for="{{list}}" bindtap="toDetail" data-md="{{item.md}}">
+<image class="cardImage" src="{{item.image}}"></image>
+<!-- 文字 -->
+<view class="cardText" >
+<text class="cardHead">{{item.title}}</text>
+<text class="cardDetail">{{item.detail}}</text>
+</view>
+</view>
+</view>

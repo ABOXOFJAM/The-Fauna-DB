@@ -1,6 +1,8 @@
 // app.js
 const app = getApp()
 App({
+  // 引入`towxml3.0`解析方法
+  towxml:require('./towxml/index'),
   "cloud":true,
   onLaunch() {//第一次初始化时候调用
     wx.cloud.init({
